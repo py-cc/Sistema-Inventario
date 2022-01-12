@@ -53,7 +53,6 @@ public class InicioSesión {
             else if (number == 3){
                 // Gestion de producto
                 producto = userAdm.escogerOperacion(categoria);
-                System.out.println(producto);
             }
             else if (number == 4){
                 CategoriaProducto userCategoria = new CategoriaProducto();

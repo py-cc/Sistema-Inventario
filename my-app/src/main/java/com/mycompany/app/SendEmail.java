@@ -71,8 +71,8 @@ public class SendEmail {
             System.out.println("Inventario.xlsx Se creo y escribio correctamente.");
             MultiPartEmail email = new MultiPartEmail();
             //email.setAuthentication();
-            String authuser = "paolacarrero731@gmail.com";
-            String authpwd = "Mujerdejudas2020++";
+            String authuser = "correoque@corresponda";
+            String authpwd = "contraseñaquecorresponda";
 
             email.setAuthenticator(new DefaultAuthenticator(authuser, authpwd));
 

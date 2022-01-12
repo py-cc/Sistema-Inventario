@@ -34,16 +34,6 @@ public class Inventario {
                 System.out.println("Nombre del producto: ");
                 Scanner inputproduct = new Scanner(System.in);
                 String producto = inputproduct.nextLine();
-                for (int i= 0; i<userProducto.size(); i++){
-                    boolean areEqual = producto.equals(userProducto.get(i));
-                    if(areEqual){
-                        break;
-                    }
-                    else{
-                        System.out.println("Esta producto no esta creado, por favor dirigase al menu de gestion de producto");
-                        return true;
-                    }
-                }
                 arrayList.add(producto);
 
                 // Cantidad del producto

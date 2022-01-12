@@ -27,16 +27,16 @@ public class GestionProductos extends Producto{
             switch (operacion){
                 case 1:
                     registrarProducto(categoria);
-                default:
+                    continue;
                 case 2:
                     eliminarProducto();
-                    break;
+                    continue;
                 case 3:
                     mostrarProductos();
-                    break;
+                    continue;
                 case 4:
                     modificarProducto();
-                    break;
+                    continue;
                 case 5:
             }
         }while (operacion!=5);

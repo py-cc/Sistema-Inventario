@@ -1,9 +1,11 @@
 package com.team8.project.Cliente;
 
+import lombok.Data;
+
 import java.io.*;
 import java.util.Scanner;
 
-
+@Data
 public class Persona implements Serializable {
     private String nombre;
     private int dni;
@@ -12,48 +14,6 @@ public class Persona implements Serializable {
     public String contraseña;
     public String userName;
     public String userPass;
-
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setDni(int dni) {
-        this.dni = dni;
-    }
-
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
-    }
-
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
-    }
-
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public int getDni() {
-        return dni;
-    }
-
-    public int getTelefono() {
-        return telefono;
-    }
-
-    public String getUsuario() {
-        return usuario;
-    }
-
-    public String getContraseña() {
-        return contraseña;
-    }
-
 
 
     public void registroUsuario() throws FileNotFoundException, IOException{

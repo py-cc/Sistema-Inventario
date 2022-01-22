@@ -1,6 +1,9 @@
-package com.mycompany.app;
+package com.team8.project.Cliente;
 
-import java.awt.image.AreaAveragingScaleFilter;
+import com.team8.project.Inventario.*;
+import com.team8.project.Inventario.Inventario;
+import com.team8.project.Inventario.factura;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

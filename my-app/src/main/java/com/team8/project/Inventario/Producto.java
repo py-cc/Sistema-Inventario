@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package com.team8.project.Inventario;
 import lombok.Data;
 import java.util.ArrayList;
 import java.util.Scanner;

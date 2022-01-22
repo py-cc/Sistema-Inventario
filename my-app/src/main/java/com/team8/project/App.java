@@ -1,13 +1,14 @@
-package com.mycompany.app;
+package com.team8.project;
+import com.team8.project.Cliente.Persona;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.*;
 
-public class Usuario extends Persona{
+public class App extends Persona {
 
 
     public static void main(String[] args)throws FileNotFoundException, IOException{
-        Usuario programm = new Usuario();
+        App programm = new App();
         programm.start();
     }
 

@@ -1,19 +1,13 @@
-package com.mycompany.app;
+package com.team8.project.Cliente;
 
 import java.io.FileOutputStream;
-import java.io.ObjectOutputStream;
 
-import org.apache.poi.hssf.usermodel.HSSFCellStyle;
-import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.xssf.usermodel.XSSFCellStyle;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.commons.mail.*;
 
-import javax.swing.plaf.synth.SynthTextAreaUI;
 import java.io.File;
 
 import java.util.*;
@@ -23,7 +17,7 @@ public class SendEmail {
     public static void SendList(ArrayList<String> inventario){
 
         XSSFWorkbook workbook = new XSSFWorkbook();
-        XSSFSheet sheet = workbook.createSheet("Inventario");
+        XSSFSheet sheet = workbook.createSheet("com/team8/project/Inventario");
 
         sheet.setColumnWidth(0, 12000);
         sheet.setColumnWidth(1, 12000);

@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package com.team8.project.Inventario;
 import java.util.Scanner;
 
 public class factura {

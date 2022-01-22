@@ -1,4 +1,6 @@
-package com.mycompany.app;
+package com.team8.project.Inventario;
+
+import com.team8.project.Cliente.SendEmail;
 
 import java.util.ArrayList;
 import java.util.Scanner;

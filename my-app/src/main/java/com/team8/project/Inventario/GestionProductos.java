@@ -1,4 +1,5 @@
-package com.mycompany.app;
+package com.team8.project.Inventario;
+//import Producto;
 import lombok.Data;
 
 import java.util.ArrayList;
@@ -9,7 +10,7 @@ import java.util.Scanner;
 *
 */
 @Data
-public class GestionProductos extends Producto{
+public class GestionProductos extends Producto {
     Scanner sc = new Scanner(System.in);
     private int operacion;
     ArrayList<String> producto = new ArrayList<>();

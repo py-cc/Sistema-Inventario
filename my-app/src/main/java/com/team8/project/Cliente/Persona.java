@@ -1,6 +1,6 @@
-package com.mycompany.app;
+package com.team8.project.Cliente;
+
 import java.io.*;
-import java.io.FileOutputStream;
 import java.util.Scanner;
 
 

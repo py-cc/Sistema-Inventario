@@ -1,6 +1,17 @@
 package com.team8.project.Inventario;
+import org.apache.commons.mail.DefaultAuthenticator;
+import org.apache.commons.mail.MultiPartEmail;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+//Modificar este código
 
 public class CategoriaProducto {
 
@@ -62,5 +73,4 @@ public class CategoriaProducto {
         bandera = true;
         return(arrayList);
     }
-
 }

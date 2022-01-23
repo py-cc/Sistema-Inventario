@@ -1,7 +1,5 @@
 package com.team8.project.Inventario;
 
-import com.team8.project.Cliente.SendEmail;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -72,7 +70,7 @@ public class Inventario {
                 }
             }else if (number == 5) {
                 // Send Email
-                SendEmail.SendList(arrayList);
+               // CategoriaProducto.SendEmail.SendList(arrayList);
             }
             else if (number == 6) {
                 // Regresar

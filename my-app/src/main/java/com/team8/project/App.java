@@ -1,10 +1,10 @@
 package com.team8.project;
-import com.team8.project.Cliente.Persona;
+import com.team8.project.Control.PermisosCliente;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class App extends Persona {
+public class App extends PermisosCliente {
 
 
     public static void main(String[] args)throws FileNotFoundException, IOException{
@@ -13,7 +13,7 @@ public class App extends Persona {
     }
 
     public void start()throws FileNotFoundException, IOException{
-        Persona usuario = new Persona();
+        PermisosCliente usuario = new PermisosCliente();
         usuario.loginUsuario();
     }
 

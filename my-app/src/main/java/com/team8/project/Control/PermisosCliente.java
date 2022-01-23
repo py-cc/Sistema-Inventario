@@ -5,7 +5,6 @@ public class PermisosCliente implements Gestion {
     Producto productos;
 
 
-
     @Override
     public void mostrarProductos() {
         if (productos.getProductos().isEmpty()) {
@@ -21,8 +20,6 @@ public class PermisosCliente implements Gestion {
 
             }
         }
-
-
     }
     @Override
     public void agregarProducto() {
@@ -30,12 +27,12 @@ public class PermisosCliente implements Gestion {
     }
     @Override
     public void visualizarCategorias() {
-
+        System.out.println("-***Error: No tienes permiso para ejecutar esta acción.");
     }
 
     @Override
     public void exportarExcel() {
-
+        //Esta función está en SendEmail
     }
 
     @Override

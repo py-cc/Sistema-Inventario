@@ -9,7 +9,7 @@ public class PermisosAdministrador implements Gestion {
 
     @Override
     public void agregarProducto() {
-
+        productos.registrarProducto(productos.getCategoriaList());
     }
 
     @Override

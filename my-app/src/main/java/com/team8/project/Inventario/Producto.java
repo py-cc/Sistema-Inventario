@@ -16,6 +16,7 @@ public class Producto {
     Scanner sc = new Scanner(System.in);
     ArrayList<Producto> productos = new ArrayList<>();
     ArrayList<String> temp = new ArrayList<>();
+    ArrayList<String> categoriaList;
 
 
     public Producto() {
@@ -28,7 +29,7 @@ public class Producto {
 
     }
 
-    public void registrarProducto(ArrayList<String> categoriaList) {//Hace falta validaciones
+    public void registrarProducto(ArrayList<String> categoriaList) {
         boolean ans = categoriaList.isEmpty();
         System.out.println("*==Ingresa el ID del producto: ");
         id = sc.nextInt();
@@ -60,10 +61,6 @@ public class Producto {
         productos.add(new Producto(id, nombreProducto, categoria));
 
         System.out.println("Se creo correctamente el producto");
-    }
-
-    public void mostrarProductos() {
-
     }
 
 

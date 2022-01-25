@@ -1,5 +1,5 @@
-Nombre:paola
-DNI:12345
-Telefono:12345
-Usuario:paola
-Contraseña:12345
+Nombre:Paola
+DNI:123456
+Telefono:123456
+Usuario:Usuario
+Contraseña:123456

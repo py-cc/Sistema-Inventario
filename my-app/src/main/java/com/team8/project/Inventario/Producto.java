@@ -20,7 +20,9 @@ public class Producto {
 
 
     public Producto() {
+
     }
+
 
     public Producto(int id, String nombreProducto, String categoria) {
         this.id = id;
@@ -55,8 +57,6 @@ public class Producto {
                 return;
             }
         }
-
-
 
         productos.add(new Producto(id, nombreProducto, categoria));
 

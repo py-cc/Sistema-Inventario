@@ -11,7 +11,6 @@ import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-//Modificar este código
 
 public class CategoriaProducto {
 
@@ -20,6 +19,7 @@ public class CategoriaProducto {
         boolean mientras = true;
         boolean bandera = false;
         ArrayList<String> arrayList = new ArrayList<>();
+
 
         while(mientras){
             System.out.println("*******************");

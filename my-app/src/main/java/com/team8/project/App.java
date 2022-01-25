@@ -14,7 +14,7 @@ public class App extends PermisosCliente {
 
     public void start()throws FileNotFoundException, IOException{
         PermisosCliente usuario = new PermisosCliente();
-        usuario.loginUsuario();
+
     }
 
 

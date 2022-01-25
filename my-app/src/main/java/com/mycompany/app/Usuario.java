@@ -3,18 +3,37 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
 
-public class Usuario extends Persona{
+/**Entry point**/
+public abstract class Usuario extends Persona{
 
 
     public static void main(String[] args)throws FileNotFoundException, IOException{
-        Usuario programm = new Usuario();
-        programm.start();
+        Usuario user = new Usuario() {
+            @Override
+            public boolean UsersAdministrador() {
+                return false;
+            }
+
+            @Override
+            public boolean UsersUsuario() {
+                return false;
+            }
+        };
+        user.start();
     }
 
     public void start()throws FileNotFoundException, IOException{
-        Persona usuario = new Persona();
-        usuario.loginUsuario();
+        Persona user = new Persona() {
+            @Override
+            public boolean UsersAdministrador() {
+                return false;
+            }
+
+            @Override
+            public boolean UsersUsuario() {
+                return false;
+            }
+        };
+        user.loginUsuario();
     }
-
-
 }

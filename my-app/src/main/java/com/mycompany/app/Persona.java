@@ -3,8 +3,12 @@ import java.io.*;
 import java.io.FileOutputStream;
 import java.util.Scanner;
 
+interface Users {
+    public boolean UsersAdministrador();
+    public boolean UsersUsuario();
+}
 
-public class Persona implements Serializable {
+public abstract class Persona implements Serializable, Users {
     private String nombre;
     private int dni;
     private int telefono;
@@ -133,23 +137,29 @@ public class Persona implements Serializable {
         }
     }
 
-    public boolean validacionUsuario(String a, String b){
+    public boolean validacionUsuario(String logged, String password){
 
-        boolean bandera;
+        final boolean bandera;
 
-        if (!a.equals(usuario))
+        if (!logged.equals(usuario))
         {
             System.out.println("Usuario incorrecto, por favor, intente nuevamente" + "\n" +
                     "-----------------------------------------------------");
-        }else if(!b.equals(contraseña)){
+        }else if(!password.equals(contraseña)){
             System.out.println("Contraseña incorrecta, por favor, intente nuevamente." + "\n" +
                     "-----------------------------------------------------");
         } else {
             System.out.println("===========================================================" + "\n" +
                     "Iniciaste sesion correctamente. Bienvenido!");
-                    InicioSesión userReturn = new InicioSesión();
-                    bandera = userReturn.UserSesion();
-                    return (bandera);
+                    InicioSesión User = new InicioSesión(){};
+                    if(logged.equals("Administrador")){
+                        bandera = User.UsersAdministrador();
+                        return (bandera);
+                    }
+                    else if(logged.equals("Usuario")){
+                        bandera = User.UsersUsuario();
+                        return (bandera);
+                    }
         }
         return (true);
     }
